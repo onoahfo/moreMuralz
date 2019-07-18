@@ -1,0 +1,25 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "this is our teams' porject",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l3gacy33/finalProject.git"
+  },
+  "author": "Jordan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l3gacy33/finalProject/issues"
+  },
+  "homepage": "https://github.com/l3gacy33/finalProject#readme"
+}
