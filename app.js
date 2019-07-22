@@ -15,7 +15,7 @@ app.get('/home', function (req, res) {
 
 // routing any traffic going to the root url and sending back a response
 app.get('/', function(request, response){
-    response.send("Landind page!!!");
+    response.send("Landing page!!!");
 });
 
 // adding context to our request
