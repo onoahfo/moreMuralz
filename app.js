@@ -16,4 +16,4 @@ app.get('/', function(request, response){
 
 //app is listening for request on port 3000  
 app.listen(3000);
-console.log('your server is now live')
+console.log('your server is now live on port 3000')
