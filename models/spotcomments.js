@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.STRING
         },
         spotId: {
-            type: DataTypes.STING
+            type: DataTypes.INTEGER
         },
     });
     return Spotcomment

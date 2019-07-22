@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.STRING
         },
         spotId: {
-            type: DataTypes.INT
+            type: DataTypes.INTEGER
         },
         image: {
             type: DataTypes.STRING
