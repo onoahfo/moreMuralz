@@ -4,9 +4,9 @@ const isAuthenticated = require('../config/middleware/isAuthenticated');
 const userController = require('../controllers/user');
 
 // get 
-router.get( '/user/register', userController.register );
+router.get( '/register', userController.register );
 
-router.get( '/user/login', userController.userLogin );
+router.get( '/login', userController.userLogin );
 
 router.get('/profile', isAuthenticated, userController.userProfile );
 
