@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Skate Profile </title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/profile..css">
 </head>
-<body>
+<body id="body">
     <header>
-        <div class="container mx-auto">
+        <div class="container mx-auto" id="id">
             <h1>Profile</h1>
-              <ul class="nav justify-content-left">
+              <ul class="nav justify-content-left" id="profile_nav_list">
                       <li class="nav-item">
-                        <a class="nav-link active" href="#">Sign Up</a>
+                        <a class="nav-link active" href="#">Resgister</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Home Page</a>
@@ -24,13 +24,28 @@
                       </li>
               </ul>
         </div>
+        <div>
+            <img src="./img/skateboard_1.jpg" class="rounded float-left" alt="...">
+        </div>
+        <div class="container-fluid" id="box">
+            <form>
+                First name:<br>
+                <input type="text" name="firstname">
+                <br>
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname">
+                <br>
+                <br>
+                <br>
+                <textarea name="Bio" id="Bio" cols="55" rows="5" placeholder="Bio"></textarea>
+              </form>
+          </div>
+          <div id="pic">
+            <ul>
+              
+            </ul>
+          </div>
     </header>
-    <div>
-      <section>
-        <ul>
-          <li><img src="/img/Camo Project.jpg" alt=""></li>
-        </ul>
-      </section>
-  </div>
 </body>
 </html>
