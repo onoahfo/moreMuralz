@@ -1,0 +1,23 @@
+#title {
+    text-align: center;
+    font-style: italic
+}
+
+#body {
+    margin: 2%
+}
+
+#username {
+    display: block;
+    margin: center
+}
+
+#email {
+    display: block;
+    margin: center
+}
+
+#password {
+    display: block;
+    margin: center
+}
