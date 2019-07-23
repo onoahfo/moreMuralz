@@ -6,11 +6,15 @@ const userController = require('../controllers/user');
 // get 
 router.get( '/register', userController.register );
 
-router.get( '/login', userController.userLogin );
+router.get( '/login', userController.login );
 
-router.get('/profile', isAuthenticated, userController.userProfile );
+router.get('/user/profile', userController.userProfile );
 
-router.get('/logout', userController.userLogout);
+router.get('/user/logout', userController.userLogout);
+
+router.get('/allSpots', userController.allSpots);
+
+router.get('/spot', userController.spot);
 
 //post
 
