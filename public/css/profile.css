@@ -1,3 +1,33 @@
 #body {
-  background-color: aquaS
+  background-color: whitesmoke
+}
+
+#spots {
+  margin: 10%;
+}
+
+#img {
+  border-radius: 10%;
+  width: 20%;
+  height: 10%;
+}
+
+#L1 {
+  margin: 0%;
+  width: 30%;
+  height: 10%;
+}
+
+#L2 {
+  margin: 0%;
+  width: 35%;
+  height: 10%;
+}
+
+#detail1 {
+width: 25%
+}
+
+#detail2 {
+  width: 25%;
 }
