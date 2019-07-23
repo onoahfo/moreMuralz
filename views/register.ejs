@@ -21,31 +21,34 @@
         </ul>
     </div>
 <body>
-        <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Links To Pages
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="home.ejs">Home</a>
-                  <a class="dropdown-item" href="profile.ejs">Profile page</a>
-                  <a class="dropdown-item" href="ratings.ejs">Ratings</a>
-                </div>
+    <div class="dropdown">
+       <a class="btn btn-secondary dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Links To Pages
+       </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="home.ejs">Home</a>
+          <a class="dropdown-item" href="profile.ejs">Profile page</a>
+          <a class="dropdown-item" href="ratings.ejs">Ratings</a>
+      </div>
+    </div>
+    <div id="name" class="d-flex justify-content-center h-50 bd-highlight">
+        <ul>
+           <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                 <span class="input-group-text" id="basic-addon1">@</span>
               </div>
-         </div>
-        <div id="name" class="d-flex justify-content-center h-50 bd-highlight">
-            <ul>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">@</span>
-                    </div>
-                    <input name="username"  cols="37" rows="1" placeholder="username"></input>
-                    </div>
-                    <br>
-                    <input name="email"     cols="37" rows="1" placeholder="email"></input>
-                    <br>
-                    <input name="password"  cols="37" rows="1" placeholder="password"></input>
-            </ul>
-        </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+           </div>
+
+           <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                   <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+           </div>
+            <input name="password"  cols="30" rows="1" placeholder="password" id="password"></input>
+        </ul>
+    </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
