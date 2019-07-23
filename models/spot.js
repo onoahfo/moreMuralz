@@ -3,7 +3,7 @@ module.exports = function(sequelize, DataTypes){
         address: {
             type: DataTypes.STRING
         },
-        spotId: {
+        userId: {
             type: DataTypes.INTEGER
         },
         image: {
