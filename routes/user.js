@@ -12,10 +12,12 @@ router.get( '/user/login', userController.userLogin );
 
 router.post( '/user/register', userController.signup );
 
-router.post( '/user/login', userController.userSignin );
-
 router.get('/profile', isAuthenticated, userController.userProfile );
 
 router.get('/logout', userController.userLogout);
+
+router.post( '/user/signup', userController.signup );
+
+router.post( '/user/login', userController.userSignin );
 
 module.exports = router;
