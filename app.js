@@ -1,18 +1,21 @@
 const express  = require('express');
 const app      = express();
 const database = require('./models');
-// const routes   = require('./routes');
+const routes   = require('./routes');
 
 
 const port = process.env.PORT || 3000 ;
 
 // addin middleware
-app.set("view engine", "ejs");   
+app.set("view engine", "ejs"); 
 
 //setting up template engine 
 app.get('/home', function (req, res) {
   res.render('home');
 })
+
+// routing manger
+app.use(routes);
 
 // routing any traffic going to the root url and sending back a response
 app.get('/', function(request, response){
