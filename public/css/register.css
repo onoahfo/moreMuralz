@@ -1,0 +1,13 @@
+#title {
+    text-align: center;
+    font-style: italic
+}
+
+#body {
+    margin: 2%
+}
+
+#username {
+    display: block;
+    align-self: center;
+}
