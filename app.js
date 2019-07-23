@@ -7,16 +7,12 @@ const port = process.env.PORT || 3000 ;
 
 // addin middleware
 app.set("view engine", "ejs");   
+app.use(express.static('./public'));
 
 //setting up template engine 
-app.get('/home', function (req, res) {
-  res.render('home');
+app.get('/', function (req, res) {
+  res.render('home.ejs');
 })
-
-// routing any traffic going to the root url and sending back a response
-app.get('/', function(request, response){
-    response.send("Landing page!!!");
-});
 
 // adding context to our request
 app.use( (req, res, next ) => {
