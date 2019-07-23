@@ -31,3 +31,9 @@ width: 25%
 #detail2 {
   width: 25%;
 }
+
+#profile_nav_list {
+  text-decoration: underline;
+  letter-spacing: 2px;
+  line-height: 3.5;
+}
