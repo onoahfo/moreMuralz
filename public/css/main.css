@@ -1,17 +1,11 @@
-/* #mainnav{
-    width: 200px;
-    padding-left: px;
-    margin-top: 300px
+
+section {
+    margin: auto;
+    width: 50%;
+    border: 2px solid black;
+    padding: 10px;
 }
 
-#submitbtn{
-    padding: 9px 20px;
-    margin-left: 550px;
-    margin-bottom: 500px
-} */
-section {
-    width: 300px;
-    height: 500px;
-    border: 2em;
-    border-block-color: blue;
+div {
+   
 }
