@@ -4,9 +4,6 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.STRING, 
             allowNull: false
         },
-        userId: {
-            type: DataTypes.INTEGER
-        },
         bio: {
             type: DataTypes.TEXT
         },
