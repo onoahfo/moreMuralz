@@ -18,3 +18,7 @@ input {
 #password {
     height: 33px;
 }
+
+#body {
+    background-image: url('../img/sky_beach2.jpg');
+}
