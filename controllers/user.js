@@ -21,6 +21,8 @@ exports.userLogout = (req, res) => {
     res.redirect('login');
 }
 
+
+
 exports.allSpots = (req, res) => {
     res.render('allSpots');
 }
