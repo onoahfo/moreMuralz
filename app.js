@@ -14,7 +14,7 @@ app.use(express.static('./public'));
 app.use(bodyParser);
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(session({ secret: "", resave: true, saveUninitialized: true }));
+// app.use(session({ secret: "", resave: true, saveUninitialized: true }));
 
 
 //setting up template engine 

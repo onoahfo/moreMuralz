@@ -9,3 +9,9 @@
     margin-left: 550px;
     margin-bottom: 500px
 } */
+section {
+    width: 300px;
+    height: 500px;
+    border: 2em;
+    border-block-color: blue;
+}

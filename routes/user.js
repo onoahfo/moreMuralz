@@ -6,6 +6,9 @@ const userController = require('../controllers/user');
 router.get( '/user/register', userController.register );
 
 router.get( '/user/login', userController.userLogin );
+// router.get( '/login', (req,res) => {
+//     res.render('login');
+// });
 
 router.post( '/user/register', userController.signup );
 
