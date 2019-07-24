@@ -21,6 +21,9 @@ app.use( (req, res, next ) => {
   next();
 } )
 
+// adding routing manager
+app.use(routes);
+
 //app is listening for request on port 3000  
 database.sequelize.sync().then(function(){
   app.listen(port, function(err){
