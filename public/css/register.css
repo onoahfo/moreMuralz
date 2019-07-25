@@ -23,5 +23,8 @@ input {
 
 #bg-img {
     background-image: url('../img/sky_beach2.jpg');
-    background-size: 25%
+}
+
+#name {
+    margin: 7%
 }
