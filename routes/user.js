@@ -17,8 +17,6 @@ router.get('/user/profile', userController.userProfile );
 
 router.get('/user/logout', userController.userLogout);
 
-
-
 router.get('/allSpots', userController.allSpots);
 
 router.get('/spot', userController.spot);
