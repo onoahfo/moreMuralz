@@ -3,11 +3,22 @@
     font-style: italic
 }
 
-#body {
-    margin: 2%
-}
-
-#username {
+#name {
     display: block;
     align-self: center;
+   
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+
+#password {
+    height: 33px;
+}
+
+#body {
+    background-image: url('../img/sky_beach2.jpg');
 }
