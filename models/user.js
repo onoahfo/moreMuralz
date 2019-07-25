@@ -31,8 +31,7 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.STRING
         }
     });
-
-// create custome method for our user model.
+    // create custome method for our user model.
     // this will handle if an unhashed password the user is providing 
     // is equal to the hash pasword in our database
     User.prototype.validPassword = function(password){

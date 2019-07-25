@@ -15,11 +15,14 @@ router.get( '/login', userController.login );
 // and redirect them back to the home page
 router.get('/user/profile', userController.userProfile );
 
-router.get('/user/logout', userController.userLogout);
+router.get( '/user/logout', userController.userLogout);
 
-router.get('/allSpots', userController.allSpots);
+router.get( '/user/addspot', userController.userAddspot);
 
-router.get('/spot', userController.spot);
+router.get('/user/allSpots', userController.userAllspots);
+
+router.get('/user/spot', userController.userSpot);
+
 
 //post
 
