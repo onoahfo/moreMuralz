@@ -2,7 +2,7 @@
     "development": {
       "username": "admin",
       "password": "secretpass",
-      "database": "SpotFinder",
+      "database": "skateHub",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
