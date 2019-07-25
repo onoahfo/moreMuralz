@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes){
-    var Comment = sequelize.define("comment", {
+    var comment = sequelize.define("comment", {
         userId: {
             type:DataTypes.INTEGER
         },
@@ -7,5 +7,5 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.STRING
         }
     });
-    return Comment
+    return comment
 }
