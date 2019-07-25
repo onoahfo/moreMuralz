@@ -8,37 +8,27 @@
    <title>Skate Hub | Home</title>
 </head>
 <body>
-   <div class="d-flex justify-content-end">
-       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                   <li class="nav-item">
-                       <!-- create href functionality -->
-                       <a class="nav-link" href="#">Contact</a>
-                   </li>
-               </ul>
-               <ul class="navbar-nav mr-auto">
-                   <li class="nav-item">
-                       <!-- create href functionality -->
-                       <a class="nav-link" href="/register.ejs">Login</a>
-                   </li>
-               </ul>
-           </div>
-           <!-- add user profile to image src -->
-           <img class="navbar-brand" src="/img/profile.jpg" width="100px" height="67.5px">
-       </nav>
-   </div>
-   <div class="input-group mb-3 d-flex justify-content-center mt-5">
-       <input type="text" class="mr-sm-2" placeholder="Location..." type="search">
-       <div class="input-group-append">
-           <button class="btn btn-outline-secondary" type="button">Submit</button>
-       </div>
-   </div>
-   <div class="text-center">
-       <img src="/img/map.png" width="400px" height="293px">
-   </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand"><h1 class="stong">Home</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/login">Login<span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="input-group mb-3 d-flex justify-content-center mt-5">
+        <input type="text" class="mr-sm-2" placeholder="Location..." type="search">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Submit</button>
+        </div>
+    </div>
+    <div class="text-center">
+        <img src="/img/map.png" width="400px" height="293px">
+    </div>
 </body>
 </html>
