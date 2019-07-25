@@ -3,7 +3,7 @@
     margin: 40px 0px 5px 0px;
     padding-top: 13px;
     padding-bottom: 50px;
-    
+    text-align: center
 }
 
 #loc-input {
@@ -14,3 +14,6 @@
     background-image: url('../img/sk8_home.jpg');
     background-size: 50%;
 }
+
+
+
