@@ -1,5 +1,5 @@
 const passport = require('../config/passport');
-
+// const db = require('../models')
 // GET /signup
 exports.register = (req, res) => {
     res.render('register');
@@ -32,7 +32,20 @@ exports.userAllspots = (req, res) => {
 }
 
 exports.userSpot = (req,res) => {
-    res.render('spot')
+    // Querying database for comments of the spot
+    req.context.db.comment.findAll({
+        where: {spotId: req.params.spotId}
+    }).then(function(comments){
+            // Querying database for spot
+        req.context.db.Spot.findOne({
+            where: {id: req.params.spotId}
+        }).then(function(results){
+            // rendering spot
+            // console.log(results[0].dataValues.image);
+            // let img = results[0].dataValues.image;
+            res.render('spot', {spot: results, comments: comments})
+        });
+    });  
 }
 
 // POST /register
