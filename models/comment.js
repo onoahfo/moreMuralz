@@ -1,11 +1,14 @@
 module.exports = function(sequelize, DataTypes){
-    var comment = sequelize.define("comment", {
+    var comments = sequelize.define("comment", {
         userId: {
             type:DataTypes.INTEGER
         },
         description: {
             type: DataTypes.STRING
+        },
+        spotId: {
+            type:DataTypes.INTEGER
         }
     });
-    return comment
+    return comments
 }

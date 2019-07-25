@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/addspot.css">
+    <link rel="stylesheet" href="/css/nav-bar.css">
+    <title>Skate Hub | Create Location</title>
+</head>
+<body id="addspot-img">
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand"><h1 class="stong">Create Location</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" >
+              <ul class="navbar-nav" id="nav-bar">
+                  <a class="nav-item nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link active" href="/login">Login<span class="sr-only">(current)</span></a>
+              </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <div id="input-box">
+            <form action="/addSpot" method="POST">
+                <div id="input" class="d-flex justify-content-center h-50 bd-highlight">
+                    <ul>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Address..."  name="address">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Best Time..."  name="besttime">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Description"  name="description">
+                        </div>
+                        <div class="mb-3" id="file-input">
+                            <h5 id="space">Add Image</h5>
+                            <label for="image"></label>
+                            <input type="file" name="image" accept="image/png, image/jpg">
+                        </div>
+                    </ul>
+                </div>
+                <div id="wrapper">        
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>    
+    </div>
+</body>
+</html>

@@ -6,8 +6,8 @@
  }
  #img {
   border-radius: 10%;
-  width: 20%;
-  height: 10%;
+  width: 150px;
+  height: 100px;
  }
  #L1 {
   margin: 0%;
@@ -24,10 +24,5 @@
  }
  #detail2 {
   width: 25%;
- }
- #navbarNavt {
-  text-decoration: underline;
-  letter-spacing: 2px;
-  line-height: 3.5
  }
 

@@ -1,5 +1,5 @@
 const passport = require('../config/passport');
-
+// const db = require('../models')
 // GET /signup
 exports.register = (req, res) => {
     res.render('register');
@@ -21,24 +21,41 @@ exports.userLogout = (req, res) => {
     res.redirect('login');
 }
 
+// GET for /user/addspot
+exports.userAddspot = (req, res) => {
+    res.render('addspot')
+}
 
 
-exports.allSpots = (req, res) => {
+exports.userAllspots = (req, res) => {
     res.render('allSpots');
 }
 
-exports.spot = (req,res) => {
-    res.render('spot')
+exports.userSpot = (req,res) => {
+    // Querying database for comments of the spot
+    req.context.db.comment.findAll({
+        where: {spotId: req.params.spotId}
+    }).then(function(comments){
+            // Querying database for spot
+        req.context.db.Spot.findOne({
+            where: {id: req.params.spotId}
+        }).then(function(results){
+            // rendering spot
+            // console.log(results[0].dataValues.image);
+            // let img = results[0].dataValues.image;
+            res.render('spot', {spot: results, comments: comments})
+        });
+    });  
 }
 
-// POST /user/signup
+// POST /register
 exports.signup = passport.authenticate('local-signup', {
     successRedirect: '/profile',
-    failureRedirect: '/user/signup' 
+    failureRedirect: '/register' 
 });
 
-// POST /user/login
+// POST /login
 exports.userSignin = passport.authenticate('local', { 
     successRedirect: '/profile',
-    failureRedirect: '/user/login' 
+    failureRedirect: '/login' 
 });
