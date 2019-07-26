@@ -3,6 +3,7 @@ const express         = require('express');
 const router          = express.Router();
 const isAuthenticated = require('../config/middleware/isAuthenticated');
 const userController  = require('../controllers/user');
+const spotC           = require('../controllers/spot')
 
 // get 
 router.get( '/register', userController.register );
@@ -21,7 +22,10 @@ router.get( '/user/addspot', userController.userAddspot);
 
 router.get('/user/allSpots', userController.userAllspots);
 
-router.get('/user/spot', userController.userSpot);
+router.get('/user/spot/:spotId', userController.userSpot);
+// A route to add spots
+
+router.post('/addSpot', spotC.addSpot)
 
 
 //post
