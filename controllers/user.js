@@ -21,13 +21,17 @@ exports.userLogout = (req, res) => {
     res.redirect('login');
 }
 
+// GET for /user/addspot
+exports.userAddspot = (req, res) => {
+    res.render('addspot')
+}
 
 
-exports.allSpots = (req, res) => {
+exports.userAllspots = (req, res) => {
     res.render('allSpots');
 }
 
-exports.spot = (req,res) => {
+exports.userSpot = (req,res) => {
     res.render('spot')
 }
 

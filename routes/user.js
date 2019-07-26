@@ -10,13 +10,13 @@ router.get( '/login', userController.login );
 
 router.get('/user/profile', userController.userProfile );
 
-router.get('/user/logout', userController.userLogout);
+router.get( '/user/logout', userController.userLogout);
 
+router.get( '/user/addspot', userController.userAddspot);
 
+router.get('/user/allSpots', userController.userAllspots);
 
-router.get('/allSpots', userController.allSpots);
-
-router.get('/spot', userController.spot);
+router.get('/user/spot', userController.userSpot);
 
 //post
 

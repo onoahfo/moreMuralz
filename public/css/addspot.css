@@ -1,0 +1,27 @@
+#input {
+    margin-right: 100px
+}
+
+#wrapper {
+    margin-left: 470px
+}
+
+#space {
+    margin-right: 10px
+}
+
+#input-box {
+    background-color: rgba(255, 255, 255, 0.911);
+    margin: 40px 0px 5px 0px;
+    padding-top: 13px;
+    padding-bottom: 50px;
+}
+
+#addspot-img {
+    background-image: url('../img/sk8_home.jpg');
+    background-size: 50%;
+}
+
+#file-input {
+    margin-left: 
+}
