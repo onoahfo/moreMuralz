@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "admin",
-      "password": "student",
+      "password": "secretpass",
       "database": "skateHub",
       "host": "127.0.0.1",
       "dialect": "mysql"

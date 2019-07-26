@@ -26,8 +26,8 @@ router.get('/user/spot', userController.userSpot);
 
 //post
 
-router.post( '/user/register', userController.signup );
+router.post( '/user/register', userController.register );
 
-router.post( '/user/login', userController.userSignin );
+router.post( '/user/login', userController.userLogin );
 
 module.exports = router;
