@@ -32,6 +32,6 @@ router.post('/addSpot', spotC.addSpot)
 
 router.post( '/user/register', userController.signup );
 
-router.post( '/user/login', userController.userSignin );
+router.post( '/user/login', userController.userLogin );
 
 module.exports = router;
