@@ -87,6 +87,84 @@
         });
         // *************************************************************
 
+ // TF305 marker ********************************************
+ var infowindowTF305 = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/2">'+
+                '<h1>TF305</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 7:30 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipMdbcrSVl-hbjPvYJ7opjtQ-dtxh6Vh5cpHd2cK=w426-h240-k-no" alt="">'+
+            '</a>'
+        });
+         // The marker spots
+        var TF305Marker = new google.maps.Marker({
+            position:{ lat: 25.822741,  lng: -80.254662 },
+            map: map
+        });
+         TF305Marker.addListener('click', function() {
+            infowindowTF305.open(map, TF305Marker);
+        });
+        // *************************************************************
+        
+         // Skatepark marker ********************************************
+        var infowindowSkatepark = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/3">'+
+                '<h1>Skate Park</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 5 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipOxjjY-RuHBNqKccLR7nBLM2MlMPYyKxidkjeVA=w408-h272-k-no" alt="">'+
+            '</a>'
+        });
+         // The marker spots
+        var SkateparkMarker = new google.maps.Marker({
+            position:{ lat: 25.792920,  lng: -80.135301 },
+            map: map
+        });
+         SkateparkMarker.addListener('click', function() {
+            infowindowSkatepark.open(map, SkateparkMarker);
+        });
+        // *************************************************************
+         // North Beach Public Skate Park marker ********************************************
+        var infowindowNorthbeachpublicskatepark = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/4">'+
+                '<h1>North Beach Public Skate Park</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 11-3:30 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipO7K-2yWkA9KLLWWHuja2TxaY76ZcM9kB1KVhpL=w521-h240-k-no" alt="">'+
+            '</a>'
+        });
+         // The marker spots
+        var NorthBeachSkateparkMarker = new google.maps.Marker({
+            position:{ lat: 25.866988,  lng: -80.121600 },
+            map: map
+        });
+         NorthBeachSkateparkMarker.addListener('click', function() {
+            infowindowNorthbeachpublicskatepark.open(map, NorthBeachSkateparkMarker);
+        });
+        // *************************************************************
+          // Kendall Indian Hammocks Skate Park marker ********************************************
+         var infowindowKendallIndianSkatePark = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/5">'+
+                '<h1>Kendall Indian Hammocks Skate Park</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 4-5:30 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipM7cwbBh8uutRwYXbTJEyUBh18NvEZ_zewPjpFo=w408-h306-k-no" alt="">'+
+            '</a>'
+        });
+         // The marker spots
+        var KendallIndianSkateparkMarker = new google.maps.Marker({
+            position:{ lat: 25.694726,  lng: -80.377536 },
+            map: map
+        });
+         KendallIndianSkateparkMarker.addListener('click', function() {
+            infowindowKendallIndianSkatePark.open(map, KendallIndianSkateparkMarker);
+        });
+        // *************************************************************
+
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
