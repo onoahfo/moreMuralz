@@ -18,3 +18,7 @@
 .gmap_canvas {
     margin-left: -100px
 }
+
+#map {
+    height: 100%;
+  }

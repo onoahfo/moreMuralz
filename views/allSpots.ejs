@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/nav-bar.css">
+   <title>Document</title>
 </head>
 <body>
-    <h1>All spots</h1>
-
+   <div class="container">
+       <nav class="navbar navbar-expand-sm navbar-light bg-light">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" >
+           <ul class="navbar-nav" id="nav-bar">
+               <a class="nav-item nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+           </ul>
+         </div>
+       </nav>
+       <h3>All Spots</h3>
+       <!-- will require spot id   -->
+       <div class="list-group">
+           <a href="/user/spot/:spotId" class="list-group-item list-group-item-action active">
+               Example spot
+           </a>
+           <a href="/user/spot" class="list-group-item list-group-item-action active">
+               Example spot
+           </a>
+           <a href="/user/spot" class="list-group-item list-group-item-action active">
+               Example spot
+           </a>
+       </div>
+   </div>
 </body>
 </html>
