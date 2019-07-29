@@ -16,6 +16,8 @@ router.get( '/login', userController.login );
 // and redirect them back to the home page
 router.get('/user/profile', userController.userProfile );
 
+router.get('/33128', userController.demo)
+
 router.get( '/user/logout', userController.userLogout);
 
 router.get( '/user/addspot', userController.userAddspot);
