@@ -1,5 +1,8 @@
 module.exports = function(sequelize, DataTypes){
     var Spot = sequelize.define("Spot", {
+        title:{
+            type: DataTypes.STRING
+        },
         address: {
             type: DataTypes.STRING
         },

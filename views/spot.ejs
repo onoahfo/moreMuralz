@@ -32,16 +32,13 @@
             <br>
             <%= spot.first %>
         </form>
+        let title = { title: req.body.title }
+        <%= Spot.title[1]%>
         <div class="container mx-auto text-center">
-            <h1>Distance: </h1>
-            <form action="/user/spot/" method="POST" class="mt-0">
-                <input class="form-control form-control-lg" type="text" name="taskItem" placeholder="Add item ..." required>
-                <button type="submit" class="btn btn-primary btn-lg mt-1 mb-5 btn-block">Add Comment</button>
-            </form>
             <ul class="list-group list-group-flush mt-5 text-light">
-                    <% for ( let i=0; i < comments.length;  i++ ) { %>
-                        <li class="list-group-item" id="<%= comments[i].id %>" ><%= comments[i].description %></li>
-                    <% } %>
+                <% for ( let i=0; i < comments.length;  i++ ) { %>
+                    <li class="list-group-item" id="<%= comments[i].id %>" ><%= comments[i].description %></li>
+                <% } %>
             </ul>
         </div>
     </body>
