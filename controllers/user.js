@@ -64,3 +64,15 @@ exports.userLogin = passport.authenticate('local', {
     successRedirect: '/user/profile',
     failureRedirect: '/login' 
 });
+
+// Post User so that they are able to add Comments to the page 
+// exports.addcomments = (req, res) => {
+//     req.context.db.comments.create({
+//         comments: req.body.addcomments
+//     }).then(function(){
+//         res.redirect('/');
+//     }).catch(function(err){
+//         console.log(err);
+//         res.json(err);
+//     });
+//  }
