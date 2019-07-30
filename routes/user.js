@@ -30,7 +30,7 @@ router.post('/addSpot', spotC.addSpot)
 
 //post
 
-router.post( '/user/register', userController.register );
+router.post( '/user/register', userController.signup );
 
 router.post( '/user/login', userController.userLogin );
 

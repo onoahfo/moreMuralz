@@ -48,14 +48,14 @@ exports.userSpot = (req,res) => {
     });  
 }
 
-// POST /register
-exports.register = passport.authenticate('local-signup', {
-    successRedirect: '/profile',
+// POST /user/register
+exports.signup = passport.authenticate('local-signup', {
+    successRedirect: '/user/profile',
     failureRedirect: '/register' 
 });
 
-// POST /login
+// POST /user/login
 exports.userLogin = passport.authenticate('local', { 
-    successRedirect: '/profile',
+    successRedirect: '/user/profile',
     failureRedirect: '/login' 
 });
