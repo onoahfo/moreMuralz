@@ -18,7 +18,7 @@ exports.userProfile = (req, res) => {
 // GET for /user/logout
 exports.userLogout = (req, res) => {
     req.logout();
-    res.redirect('login');
+    res.redirect('/login');
 }
 
 // GET for /user/addspot
