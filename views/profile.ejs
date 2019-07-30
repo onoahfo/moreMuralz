@@ -20,17 +20,25 @@
           <div class="collapse navbar-collapse" >
             <ul class="navbar-nav" id="nav-bar">
                 <a class="nav-item nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="/user/logout">Logout<span class="sr-only">(current)</span></a>
-            </ul>
+                <!-- <a class="nav-item nav-link active" href="/user/logout">Logout<span class="sr-only">(current)</span></a> -->
+                <% if(user){ %>
+                  <a href="/user/logout" class="nav-item nav-link active"> Logout </a>
+                <% } else{ %>
+                  <a href="/login"class="nav-item is-active" active-color="orange">Login </a>
+                <% } %>
+                
+                
+                <a class="nav-item nav-link active" href="/user/addSpot">Add Spot<span class="sr-only">(current)</span></a>
+              </ul>
           </div>
         </nav>             
       </div>
       <br>
       <br>
       <br>
-        <div class="text-center">
-          <img src="../img/profile2.png" id="img" >
-          <h1><%= user.firstName %></h1>
+        <div class="ml-5 text-left">
+          <img src="https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg" alt="Avatar" style="width:300px">
+          <h1 class="ml-2"><%= user.firstName %> <%= user.lastName %></h1>
         </div>
       <h2 id="spots">Favorite spots</h2>
         <div>
