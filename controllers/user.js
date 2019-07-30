@@ -31,6 +31,11 @@ exports.userAllspots = (req, res) => {
     res.render('allSpots');
 }
 
+exports.demo = (req, res) => {
+    res.render('demo');
+}
+
+
 exports.userSpot = (req,res) => {
     // Querying database for comments of the spot
     req.context.db.comment.findAll({
