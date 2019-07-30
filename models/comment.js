@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes){
-    var comments = sequelize.define("comment", {
+    var comments = sequelize.define("comments", {
         userId: {
             type:DataTypes.INTEGER
         },

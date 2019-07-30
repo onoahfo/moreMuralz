@@ -25,4 +25,8 @@ input {
     background-image: url('../img/sky_beach2.jpg');
 }
 
+#wrapper {
+    margin-left: 49%; 
+}
+
 

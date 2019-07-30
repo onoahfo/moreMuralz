@@ -45,3 +45,7 @@ db.Spot.create({
     besttime: "4-5:30 pm",
     description: "Skateboard park.",
 })
+
+db.comments.create({
+    description: "Kendall Indian Hammocks Skate Park",
+
