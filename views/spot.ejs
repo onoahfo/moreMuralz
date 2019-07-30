@@ -23,18 +23,17 @@
                     </div>
                 </div>
             </nav>
-        </div>
+        
         <br>
         <br>
         <br>
-        <form class="mx-auto" style="width: 1000px;">
-            <img src="<%= spot.image %>">
+     
+            <img src="https://lh5.googleusercontent.com/p/AF1QipMVB--Gi2Q9s9yO7LvDPsri8ZsjAJaVUcQrhjf5=w408-h306-k-no" alt="">
             <br>
             <br>
             <%= spot.first %>
-        </form>
-        let title = { title: req.body.title }
-        <%= Spot.title[1]%>
+      
+        <%= spot.title%>
         <div class="container mx-auto text-center">
             <ul class="list-group list-group-flush mt-5 text-light">
                 <% for ( let i=0; i < comments.length;  i++ ) { %>
@@ -42,5 +41,6 @@
                 <% } %>
             </ul>
         </div>
+    </div>
     </body>
 </html>

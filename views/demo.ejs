@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </form> 
-            
+           <a href=""></a>
             <div id="map"></div>
     <script>
       var map;
@@ -57,27 +57,36 @@
         // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {
-            zoom:4,
+            zoom:13,
             // center: { lat: 27.664827, lng: -81.515755 }
             // us center
-            center: { lat: 39.381266, lng: -97.922211 }
+            center: { lat: 25.774820, lng: -80.198914 }
         });
-              // The location of Uluru
-        var spot1 = {
-            lat: 25.774820,
-            lng: -80.198910
-        };
 
-        // The marker, positioned at Uluru
-        // var marker = new google.maps.Marker({
-        //     position: spot,
-        //     map: map
-        // });
 
-        // map = new google.maps.Map(document.getElementById('map'), {
-        //   center: {lat: -34.397, lng: 150.644},
-        //   zoom: 8
-        // });
+        // The locations
+         var infowindowlot11 = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/1">'+
+                '<h1>Lot11</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 6 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipMVB--Gi2Q9s9yO7LvDPsri8ZsjAJaVUcQrhjf5=w408-h306-k-no" alt="">'+
+            '</a>'
+           
+        });
+
+
+        // The marker spots
+        var Lot11Marker = new google.maps.Marker({
+            position:{ lat: 25.774820,  lng: -80.198914 },
+            map: map
+        });
+
+        Lot11Marker.addListener('click', function() {
+            infowindowlot11.open(map, Lot11Marker);
+        });
+
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
