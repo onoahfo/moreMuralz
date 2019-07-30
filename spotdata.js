@@ -1,6 +1,7 @@
 const db = require('./models');
 
 
+
 db.Spot.create({
     id: 1,
     title: "Lot11",

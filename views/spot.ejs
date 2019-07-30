@@ -12,7 +12,6 @@
 <body>
     <div class="container">
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand"><h1 class="stong">Spot Reviews</h1></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,18 +22,26 @@
                     </div>
                 </div>
             </nav>
-        
-        <br>
-        <br>
-        <br>
+        <div id="spotbox">
+            <h1 class="text-center"><strong><%= spot.title %></strong></h1>
+            <h4>Description</h4>
+            <p class="ml-2"><%= spot.description %></p>
+            <br>
+            <img src="<%= spot.image %>" alt="spot img">
+            <br>
+            <br>
+            <h4>Address</h4>
+            <p class="ml-2"><%= spot.address %></p>
+            <br>
+            <h4>Best Time</h4>
+            <p class="ml-2"><%= spot.besttime %></p>
+            
+        </div>
      
-            <img src="<%= spot.image %>" alt="">
-            <br>
-            <br>
-            <%= spot.title %>
-            <%= spot.description %>
-            <%= spot.address %>
-            <%= spot.besttime %>
+            
+            
+            
+            
         <div class="container mx-auto text-center">
             <ul class="list-group list-group-flush mt-5 text-light">
                 <% for ( let i=0; i < comments.length;  i++ ) { %>
