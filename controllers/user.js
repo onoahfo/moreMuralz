@@ -12,7 +12,7 @@ exports.login = (req, res) => {
 
 // GET /user/profile
 exports.userProfile = (req, res) => {
-    res.render('profile');
+    res.render('profile', {user: req.user});
 }
 
 // GET for /user/logout
@@ -31,6 +31,11 @@ exports.userAllspots = (req, res) => {
     res.render('allSpots');
 }
 
+exports.demo = (req, res) => {
+    res.render('demo');
+}
+
+
 exports.userSpot = (req,res) => {
     // Querying database for comments of the spot
     req.context.db.comment.findAll({
@@ -48,14 +53,14 @@ exports.userSpot = (req,res) => {
     });  
 }
 
-// POST /register
+// POST /user/register
 exports.signup = passport.authenticate('local-signup', {
-    successRedirect: '/profile',
+    successRedirect: '/user/profile',
     failureRedirect: '/register' 
 });
 
-// POST /login
-exports.userSignin = passport.authenticate('local', { 
-    successRedirect: '/profile',
+// POST /user/login
+exports.userLogin = passport.authenticate('local', { 
+    successRedirect: '/user/profile',
     failureRedirect: '/login' 
 });

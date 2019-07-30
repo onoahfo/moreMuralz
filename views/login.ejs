@@ -29,11 +29,11 @@
         <br>
         <br>
         <div id="login-box">
-            <form action="/models/user.js">
+            <form action="/user/login" method="POST" class="login" >
                 <div id="name" class="d-flex justify-content-center h-50 bd-highlight">
                     <ul>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Email..." aria-label="Username..." aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Email..." aria-label="Username..." name="email">
                         </div>
                         <div class="input-group mb-3">
                             <input class="form-control" type="password" name="password" placeholder="Password...">
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
                 <div id="wrapper">        
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
             <br>

@@ -14,24 +14,26 @@ router.get( '/login', userController.login );
 // add (isAuthenticated) to userController), so that we are able to block our any other
 // person from trying to get to this page without signing in
 // and redirect them back to the home page
-router.get('/user/profile', userController.userProfile );
+router.get('/user/profile', isAuthenticated, userController.userProfile );
+
+router.get('/33128', userController.demo)
 
 router.get( '/user/logout', userController.userLogout);
 
-router.get( '/user/addspot', userController.userAddspot);
+router.get( '/user/addspot', isAuthenticated, userController.userAddspot);
 
-router.get('/user/allSpots', userController.userAllspots);
+router.get('/user/allSpots', isAuthenticated, userController.userAllspots);
 
 router.get('/user/spot/:spotId', userController.userSpot);
-// A route to add spots
 
-router.post('/addSpot', spotC.addSpot)
-
+router.get('/login', userController.login)
 
 //post
+// A route to add spots
+router.post('/addSpot', spotC.addSpot)
 
 router.post( '/user/register', userController.signup );
 
-router.post( '/user/login', userController.userSignin );
+router.post( '/user/login', userController.userLogin );
 
 module.exports = router;

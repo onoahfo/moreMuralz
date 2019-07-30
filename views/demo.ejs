@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="/css/nav-bar.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/home.css">
+   <title>Skate Hub | Home</title>
+   <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 400px; 
+          width: 100%; 
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+</head>
+<body id="home-img">
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand"><h1 class="stong">Home</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-bar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/login">Login<span class="sr-only">(current)</span></a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/register">Register<span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </nav>
+        <div id="map-input">
+            <form action="">
+                <div class="input-group mb-3 d-flex justify-content-center mt-5">
+                    <input id="loc-input" type="text" class="mr-sm-2" placeholder="Location..." type="search">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-white" type="button">Submit</button>
+                    </div>
+                </div>
+            </form> 
+           <a href=""></a>
+            <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+            zoom:13,
+            // center: { lat: 27.664827, lng: -81.515755 }
+            // us center
+            center: { lat: 25.774820, lng: -80.198914 }
+        });
+
+
+        // Lott 11 marker ********************************************
+         var infowindowlot11 = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/1">'+
+                '<h1>Lot11</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 6 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipMVB--Gi2Q9s9yO7LvDPsri8ZsjAJaVUcQrhjf5=w408-h306-k-no" alt="">'+
+            '</a>'
+        });
+
+
+        // The marker spots
+        var Lot11Marker = new google.maps.Marker({
+            position:{ lat: 25.774820,  lng: -80.198914 },
+            map: map
+        });
+
+        Lot11Marker.addListener('click', function() {
+            infowindowlot11.open(map, Lot11Marker);
+        });
+        // *************************************************************
+        
+
+
+
+        // TF305 marker ********************************************
+        var infowindowTF305 = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/2">'+
+                '<h1>TF305</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 7:30 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipMdbcrSVl-hbjPvYJ7opjtQ-dtxh6Vh5cpHd2cK=w426-h240-k-no" alt="">'+
+            '</a>'
+        });
+
+
+        // The marker spots
+        var TF305Marker = new google.maps.Marker({
+            position:{ lat: 25.822741,  lng: -80.254662 },
+            map: map
+        });
+
+        TF305Marker.addListener('click', function() {
+            infowindowTF305.open(map, TF305Marker);
+        });
+        // *************************************************************
+        
+
+
+
+        // Skatepark marker ********************************************
+        var infowindowSkatepark = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/3">'+
+                '<h1>Skate Park</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 5 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipOxjjY-RuHBNqKccLR7nBLM2MlMPYyKxidkjeVA=w408-h272-k-no" alt="">'+
+            '</a>'
+        });
+
+
+        // The marker spots
+        var SkateparkMarker = new google.maps.Marker({
+            position:{ lat: 25.792920,  lng: -80.135301 },
+            map: map
+        });
+
+        SkateparkMarker.addListener('click', function() {
+            infowindowSkatepark.open(map, SkateparkMarker);
+        });
+        // *************************************************************
+
+
+
+        // North Beach Public Skate Park marker ********************************************
+        var infowindowNorthbeachpublicskatepark = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/4">'+
+                '<h1>North Beach Public Skate Park</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 11-3:30 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipO7K-2yWkA9KLLWWHuja2TxaY76ZcM9kB1KVhpL=w521-h240-k-no" alt="">'+
+            '</a>'
+        });
+
+
+        // The marker spots
+        var NorthBeachSkateparkMarker = new google.maps.Marker({
+            position:{ lat: 25.866988,  lng: -80.121600 },
+            map: map
+        });
+
+        NorthBeachSkateparkMarker.addListener('click', function() {
+            infowindowNorthbeachpublicskatepark.open(map, NorthBeachSkateparkMarker);
+        });
+        // *************************************************************
+
+
+
+         // Kendall Indian Hammocks Skate Park marker ********************************************
+         var infowindowKendallIndianSkatePark = new google.maps.InfoWindow({
+          content: 
+            '<a href="/user/spot/5">'+
+                '<h1>Kendall Indian Hammocks Skate Park</h1>'+
+                '<p> description of the spot</p>'+
+                '<p>Best times: 4-5:30 pm</p>' +
+                '<img src="https://lh5.googleusercontent.com/p/AF1QipM7cwbBh8uutRwYXbTJEyUBh18NvEZ_zewPjpFo=w408-h306-k-no" alt="">'+
+            '</a>'
+        });
+
+
+        // The marker spots
+        var KendallIndianSkateparkMarker = new google.maps.Marker({
+            position:{ lat: 25.694726,  lng: -80.377536 },
+            map: map
+        });
+
+        KendallIndianSkateparkMarker.addListener('click', function() {
+            infowindowKendallIndianSkatePark.open(map, KendallIndianSkateparkMarker);
+        });
+        // *************************************************************
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+    async defer></script>
+
+
+        </div>
+    </div>
+</body>
+</html>
