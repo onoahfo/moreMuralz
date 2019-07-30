@@ -28,6 +28,7 @@ router.get('/user/spot/:spotId', userController.userSpot);
 
 router.get('/login', userController.login)
 
+
 //post
 // A route to add spots
 router.post('/addSpot', spotC.addSpot)
@@ -35,5 +36,7 @@ router.post('/addSpot', spotC.addSpot)
 router.post( '/user/register', userController.signup );
 
 router.post( '/user/login', userController.userLogin );
+
+router.post('/user/comments', isAuthenticated, userController.comments)
 
 module.exports = router;
