@@ -12,7 +12,7 @@ exports.login = (req, res) => {
 
 // GET /user/profile
 exports.userProfile = (req, res) => {
-    res.render('profile');
+    res.render('profile', {user: req.user});
 }
 
 // GET for /user/logout

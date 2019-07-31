@@ -5,7 +5,7 @@ const db = require('../models');
 // telling passport we want to use local strategy, in other words we want to use
 // email and password
 // for signing in
-passport.use('local', new LocalStrategy(
+passport.use( new LocalStrategy(
     {  usernameField: 'email' },
     function(email, password, done) {
       db.User.findOne( { where: { email: email } } ).then( function(dbuser){

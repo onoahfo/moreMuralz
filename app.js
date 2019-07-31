@@ -11,10 +11,11 @@ const port = process.env.PORT || 3000 ;
 
 // setting up middleware 
 app.use(express.static('./public'));
+app.use(session({ secret: "cat keyborad", resave: true, saveUninitialized: true }));
 app.use(bodyParser);
 app.use(passport.initialize());
 app.use(passport.session());
-// app.use(session({ secret: "", resave: true, saveUninitialized: true }));
+
 
 
 //setting up template engine 
