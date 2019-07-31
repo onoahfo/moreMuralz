@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/profile.css">
     <link rel="stylesheet" href="/css/nav-bar.css">
 </head>
-<body id="body">
+<body id="page-img">
   <header>
       <div class="container">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -26,32 +26,37 @@
                 <% } else{ %>
                   <a href="/login"class="nav-item is-active" active-color="orange">Login </a>
                 <% } %>
-                
-                
                 <a class="nav-item nav-link active" href="/user/addSpot">Add Spot<span class="sr-only">(current)</span></a>
               </ul>
           </div>
         </nav>             
+        <br>
+        <br>
+        <br>
+        <div id="box" class="text-left">
+          <div id="profile-box">  
+            <div class="ml-5 ">
+              <img  id="profile-img" src="https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg" alt="Avatar" style="width:300px">
+              <br>
+              <br>
+              <h1 class="ml-2 "><%= user.firstName %> <%= user.lastName %></h1>
+              
+            </div>
+          </div> 
+          <br>
+          <br> 
+          <h2 id="spots" class="ml-5">Favorite spots</h2>
+          <br>
+          <br>
+            <div class="ml-5 ">
+                <img src="../img/park2.JPG" width="400px" height="350px">
+                <br>
+                <br>
+                <br>
+                <img src="../img/park3.jpg" width="400px" height="350px">
+            </div>
+          </div>
       </div>
-      <br>
-      <br>
-      <br>
-        <div class="ml-5 text-left">
-          <img src="https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg" alt="Avatar" style="width:300px">
-          <h1 class="ml-2"><%= user.firstName %> <%= user.lastName %></h1>
-        </div>
-      <h2 id="spots">Favorite spots</h2>
-        <div>
-          <form>
-            <img src="../img/park2.JPG" id="L1" alt="">
-            <textarea name="Description" id="detail1" cols="40" rows="7" placeholder="Description..."></textarea>
-            <br>
-            <br>
-            <br>
-            <img src="../img/park3.jpg" id="L2" alt="">
-            <textarea name="Description" id="detail2" cols="40" rows="7" placeholder="Description..."></textarea>
-           </form>
-        </div>
  </header>
 </body>
 </html>

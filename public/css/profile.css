@@ -1,29 +1,35 @@
-#body {
-  background-color: whitesmoke
- }
- #spots {
-  margin: 10%;
- }
- #img {
+#page-img {
+  background-image: url('../img/skateboard_1.jpg');
+  background-size: 50%;
+}
+#spots {
+  
+}
+#img {
   border-radius: 10%;
   width: 150px;
   height: 100px;
- }
- #L1 {
-  margin: 0%;
-  width: 30%;
-  height: 10%;
- }
- #L2 {
-  margin: 0%;
-  width: 35%;
-  height: 10%;
- }
- #detail1 {
- width: 25%
- }
- #detail2 {
-  width: 25%;
- }
- 
- 
+}
+
+#detail {
+  width: 25%
+}
+
+
+#profile-img {
+  border-radius: 50%;
+  border: 5px black
+}
+
+#box {
+  background-color: rgba(255, 255, 255, 0.911);
+  margin: 40px 0px 5px 0px;
+  padding-top: 13px;
+  padding-bottom: 50px;
+  text-align: center
+}
+
+#profile-box {
+  background-color: rgba(184, 183, 183, 0.822);
+  padding-top: 13px;
+}
