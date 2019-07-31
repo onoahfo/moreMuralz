@@ -38,7 +38,7 @@ exports.demo = (req, res) => {
 
 exports.userSpot = (req,res) => {
     // Querying database for comments of the spot
-    req.context.db.comment.findAll({
+    req.context.db.comments.findAll({
         where: {spotId: req.params.spotId}
     }).then(function(comments){
             // Querying database for spot
