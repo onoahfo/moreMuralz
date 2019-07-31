@@ -1,5 +1,6 @@
 #img {
     background-image: url('../img/sk8_login.jpg');
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
