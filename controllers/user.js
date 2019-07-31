@@ -70,7 +70,7 @@ exports.userLogin = passport.authenticate('local', {
 //     req.context.db.comments.create({
 //         comments: req.body.addcomments
 //     }).then(function(){
-//         res.redirect('/');
+//         res.redirect('/user/spot');
 //     }).catch(function(err){
 //         console.log(err);
 //         res.json(err);

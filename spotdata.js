@@ -48,4 +48,4 @@ db.Spot.create({
 
 db.comments.create({
     description: "Kendall Indian Hammocks Skate Park",
-
+})
